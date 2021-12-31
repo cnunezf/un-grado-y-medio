@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400&display=swap');
+
+/* Estilos generales */
+/* #region */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+}
+
+main{
+    background-color: rgb(244, 244, 244);
+}
+
+.content{
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+h2{
+    font-size: 1.7rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+h3{
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+h3 a{
+    color: rgb(189, 55, 0);
+}
+
+h3 a:hover{
+    color: rgb(0, 0, 0);
+}
+
+h4{
+    margin-top: 2.5rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+p{
+    line-height: 1.563rem;
+    margin: 1rem 0;
+}
+
+q{
+    quotes: "«" "»";
+    font-style: italic;
+}
+
+img{
+    max-width: 100%;
+}
+
+section{
+    margin-bottom: 3rem;
+}
+
+figure{
+    margin: 1.5rem 0;
+}
+
+.mas-info{
+    color: rgb(189, 55, 0);
+    font-weight: 600;
+    border-bottom: 1px dotted;
+}
+
+.mas-info:hover{
+    color: rgb(0, 0, 0);
+    border-bottom: none;
+}
+
+.text-link{
+    color: rgb(189, 55, 0);
+}
+
+.text-link:hover{
+    color: rgb(0, 0, 0);
+    border-bottom: 1px dotted;
+}
+
+/* #endregion */
+
+
+/* Cabecera */
+/* #region */
+header{
+    text-align: center;
+}
+
+/* #endregion */
+
+
+/* Menu navegacion */
+/* #region */
+.menu-principal{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1.875rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.menu-principal a{
+    font-weight: 800;
+}
+
+.menu-principal a:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-principal .active{
+    color: rgb(189, 55, 0);
+}
+
+.menu-principal li{
+    margin-bottom: 0.313rem;
+}
+
+
+/* #endregion */
+
+/* Pie de página */
+/* #region */
+footer{
+    padding-top: 3.125rem;
+    padding-bottom: 1.875rem;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: 600;
+}
+
+footer a, footer p{
+    color: rgb(255, 255, 255);
+}
+
+.enlaces-pie a:hover{
+    color: rgb(189, 55, 0);
+}
+
+.redes{
+    padding: 1.875rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.redes a:hover{
+    opacity: 0.7;
+}
+
+footer p{
+    margin: 0 auto;
+    width: 75%;
+}
+/* #endregion */
+
+
+/* Index.html */
+/* #region */
+#carrera{
+    height: 20rem;
+    background-image: url("../images/bg-hero-home.jpg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+}
+
+#carrera h2{
+    width: 80%;
+    color:rgb(255, 255, 255);
+    font-size: calc(2rem + 1.5vw);
+    font-weight: 400;
+    line-height: 3rem;
+    text-align: left;
+}
+
+.date{
+    display: block;
+    margin: 1rem 0;
+}
+
+#formulario{
+    margin-bottom: 0;
+    padding: 3rem 0;
+    background-color: rgb(242, 232, 228);
+}
+
+#formulario h2{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#formulario .content{
+    margin: 0 2rem;
+}
+
+input[type="text"], input[type="email"]{
+    width: 100%;
+    height: 3rem;
+    padding-left: 1rem;
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#prot-datos{
+    font-size: 0.775rem;
+    line-height: 1.1rem;
+}
+
+#prot-datos a{
+    color: rgb(189, 55, 0);
+}
+
+#prot-datos a:hover{
+    color: rgb(0, 0, 0);
+}
+
+button[type="submit"]{
+    width: 180px;
+    height: 60px;
+    border: none;
+    border-radius: 0;
+
+    background-color:rgb(189, 55, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+button[type="submit"]:hover{
+    background-color:rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+/* #endregion */
+
+
+/* Sintomas.html */
+/* #region */
+.sintomas section{
+    background-color: rgb(255, 255, 255);
+    width: 85%;
+    margin: 0 auto;
+    padding: 1.75rem 1rem 0.875rem 1rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+.sintomas section:last-of-type {
+    margin-bottom: 4rem;
+}
+
+.sintomas h3{
+    margin-top: 1rem;
+}
+
+.sintomas strong{
+    font-style: italic;
+}
+
+.sintomas q{
+    font-style: normal;
+}
+
+
+
+/* #endregion */
+
+
+/* Videos.html */
+/* #region */
+.videos section{
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.videos figure{
+    padding-bottom: 1.5rem;
+}
+
+.title{
+    font-style: normal;
+}
+
+.iframe-container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.iframe-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.videos figcaption{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.videos cite{
+    line-height: 1.5rem;
+}
+
+
+
+
+/* #endregion */
+
+
+
+/* Cop26.html */
+/* #region */
+.cop26 .content{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.data-list dt{
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.data-list dd{
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+}
+
+.cop26 p{
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+}
+
+.cop26 ol{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+.cop26 ol li{
+    line-height: 1.7rem;
+    margin-top: 1rem;
+}
+
+.cite-container{
+    margin-top: 2rem;
+    background-color: rgb(255, 255, 255);
+    border-left: 3px solid rgb(189, 55, 0);
+    padding: 1rem;
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+}
+
+.cite-author{
+    margin-top: 1rem;
+    display: block;
+    font-weight: 600;
+}
+
+
+/* #endregion */
+
+
+
+/* Media queries */
+@media (min-width: 820px){
+    .content, .cop26 .content{
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+
+    h2{
+        margin-bottom: 0;
+    }
+
+    /* header */
+    /* #region */
+    header{
+        text-align: left;
+    }
+
+    .menu-principal{
+        text-align: left;
+    }
+
+    .menu-principal ul{
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+
+
+    /* #endregion */
+
+    /* footer */
+    /* #region */
+    footer{
+        text-align: left;
+    }
+
+    .enlaces-pie{
+        display: flex;
+        gap: 2rem;
+        list-style: disc;
+    }
+
+    .enlaces-pie li{
+        color: white;
+    }
+
+    .enlaces-pie li:first-child{
+        list-style: none;
+    }
+
+    .redes{
+        justify-content: flex-start;
+    }
+
+    footer p{
+        margin: 0;
+        width: 100%;
+    }
+
+
+    /* #endregion */
+
+    /* Index.html responsive */
+    /* #region */
+    .grid-index{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .grid-index h3 a{
+        font-size: calc(0.5rem + 1vw);
+        line-height: 100%;
+    }
+
+    .grid-index p, .grid-index time, .grid-index a{
+        font-size: calc(0.3rem + 0.8vw);
+        line-height: 150%;
+    }
+
+    #formulario .content{
+        margin: 0 20vw;
+    }
+
+    #formulario form{
+        width: 80%;
+        max-width: 425px;
+        margin: 0 auto;
+    }
+
+    /* #endregion */
+
+    /* sintomas.html responsive */
+    /* #region */
+    .grid-sintomas{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: fit-content(100%);
+    }
+
+    .grid-sintomas section:nth-child(1),
+    .grid-sintomas section:nth-child(3),
+    .grid-sintomas section:nth-child(5){
+        grid-column: 1/3;
+    }
+
+    .grid-sintomas section:nth-child(2),
+    .grid-sintomas section:nth-child(4){
+        grid-column: 2/4;
+    }
+
+    .grid-sintomas section{
+        width: 100%;
+        padding: 1rem;
+        text-align: justify;
+    }
+
+    .grid-sintomas section figure{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 1rem;
+        margin: 0;
+    }
+
+    .grid-sintomas section figure img{
+        grid-column: 1/2;
+    }
+
+    .grid-sintomas section figure figcaption{
+        grid-column: 2/3;
+    }
+
+    .grid-sintomas h3{
+        font-size: calc(0.6rem + 0.5vw);
+        margin: 0;
+    }
+
+    .grid-sintomas p, .grid-sintomas a{
+        font-size: calc(0.4rem + 0.5vw);
+        line-height: 150%;
+        margin: 0;
+    }
+
+    /* #endregion */
+
+    /* videos.html responsive */
+    /* #region */
+    .grid-videos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: fit-content(100%);
+    }
+
+    .grid-videos section{
+        margin: 2rem auto;
+    }
+
+    .grid-videos figure{
+        padding: 0;
+        margin: 0;
+    }
+
+    .grid-videos figcaption{
+        margin-bottom: 0.5rem;
+    }
+
+    .grid-videos cite{
+        font-size: calc(0.5rem + 0.5vw);
+        line-height: 120%;
+    }
+
+    /* #endregion */
+
+    /* cop26.html responsive */
+    /* #region */
+    .grid-cop26{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: fit-content(100%);
+        gap: 4rem;
+        margin-top: 2rem;
+        text-align: justify;
+    }
+
+    .grid-cop26 h3{
+        text-align: left;
+        font-size: calc(0.7rem + 1vw);
+    }
+
+    .grid-cop26 dt,
+    .grid-cop26 dd,
+    .grid-cop26 a,
+    .grid-cop26 p,
+    .grid-cop26 ol li,
+    .grid-cop26 cite{
+        font-size: calc(0.3rem + 1vw);
+        line-height: 120%;
+    }
+
+    /* #endregion */
+
+
+}
