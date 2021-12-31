@@ -1,1 +1,0 @@
-# un-grado-y-medio
